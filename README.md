@@ -11,3 +11,8 @@ Reasoning: Give one Bube to one of hands 2 or 3. Now there are 19 remaining card
 - 5/1: ~13%
 - 4/2: ~49%
 - 3/3: ~37%
+
+#### Non-Trump suit distribution probability GIVEN hand 1 and skat have 4 of that suit:
+- 4/0: ~09%
+- 3/1: ~49%
+- 2/2: ~42%

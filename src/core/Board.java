@@ -99,4 +99,24 @@ public class Board {
 		return stringBuilder.toString();
 	}
 
+	public int numberOfNotBubeKaroInHand(int hand) {
+		int karo = 0;
+		for (Card card : hands.get(hand).getCards()) {
+			if (!card.isBube() && card.isKaro()) {
+				karo++;
+			}
+		}
+		return karo;
+	}
+	
+	public int numberOfNotBubeKaroInSkat() {
+		int karo = 0;
+		for (Card card : skat.getCards()) {
+			if (!card.isBube() && card.isKaro()) {
+				karo++;
+			}
+		}
+		return karo;
+	}
+
 }
