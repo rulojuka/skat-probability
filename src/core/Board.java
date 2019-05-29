@@ -47,6 +47,27 @@ public class Board {
 		}
 		return false;
 	}
+	
+	public int numberOfKaroTrumpsInHand(int hand) {
+		int trumps = 0;
+		for (Card card : hands.get(hand).getCards()) {
+			if (card.isBube() || card.isKaro()) {
+				trumps++;
+			}
+		}
+		return trumps;
+	}
+	
+	public int numberOfKaroTrumpsInSkat() {
+		int trumps = 0;
+		for (Card card : skat.getCards()) {
+			if (card.isBube() || card.isKaro()) {
+				trumps++;
+			}
+		}
+		return trumps;
+	}
+	
 
 	@Override
 	public String toString() {

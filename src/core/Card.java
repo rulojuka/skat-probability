@@ -26,4 +26,8 @@ public class Card {
 	public String toString() {
 		return suit.getSymbol() + rank.getSymbol();
 	}
+
+	public boolean isKaro() {
+		return Suit.KARO == this.suit; 
+	}
 }

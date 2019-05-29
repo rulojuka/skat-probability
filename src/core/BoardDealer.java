@@ -8,7 +8,7 @@ public class BoardDealer {
 	private List<Hand> hands;
 	private Hand skat;
 
-	public Board dealBoard(ShuffledDeck shuffledDeck) {
+	public Board dealBoard(Deck shuffledDeck) {
 		this.hands = new ArrayList<Hand>();
 		for (int i = 0; i < 3; i++) {
 			hands.add(new Hand());

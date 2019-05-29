@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-public class ShuffledDeck {
+public class ShuffledDeck implements Deck{
 	private List<Card> deck; // List is best because we need to shuffle it
 	private Iterator<Card> iterator;
 
@@ -21,12 +21,14 @@ public class ShuffledDeck {
 		iterator = this.deck.iterator();
 	}
 
+	@Override
 	public Card dealCard() {
 		if (iterator.hasNext())
 			return iterator.next();
 		throw new RuntimeException();
 	}
 
+	@Override
 	public boolean hasCard() {
 		return iterator.hasNext();
 	}
