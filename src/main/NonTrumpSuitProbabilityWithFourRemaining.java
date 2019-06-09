@@ -44,7 +44,7 @@ public class NonTrumpSuitProbabilityWithFourRemaining {
 		System.out.println("Total de mãos: " + counter);
 		System.out.println(
 				"Total de mãos com mão 1 + skat com 4 ouros que não são valetes: " + handOnePlusSkatWithFourNonBubenKaro);
-		System.out.println("Divisão das outras quatro cartas do naipe: ");
+		System.out.println("Divisão das outras quatro cartas de ouros: ");
 		System.out.println("4/0: " + fourZero + " Proporção: " + (double) fourZero / handOnePlusSkatWithFourNonBubenKaro);
 		System.out.println("3/1: " + threeOne + " Proporção: " + (double) threeOne / handOnePlusSkatWithFourNonBubenKaro);
 		System.out.println(
